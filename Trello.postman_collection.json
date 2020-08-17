@@ -1,0 +1,3654 @@
+{
+	"info": {
+		"_postman_id": "66e72b46-d2c1-4036-9f5d-e586c9061926",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "boards",
+			"item": [
+				{
+					"name": "/boards/:id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cba1f847-56bf-4ae0-9cd4-9710172726d0",
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/me/boards?fields=name,id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								"me",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "name,id"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id/actions",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id/actions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id/cards",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id/cards",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id",
+								"cards"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id/labels",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id/labels",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id",
+								"labels"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id/lists",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id/lists",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id",
+								"lists"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id/members",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id/members",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id",
+								"members"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id/organization",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id/organization",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id",
+								"organization"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"put in this JSON only the fields you want to update\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/boards/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "38bcaa8a-ad16-44c7-a51b-7f9f91c59dc1",
+								"exec": [
+									"pm.environment.set(\"boardName\", getRandomBoardName());",
+									"",
+									"function getRandomBoardName(){",
+									"    const boardName = \"New board name \" + parseInt(Math.random() * 10000);",
+									"    console.log(boardName);",
+									"    return boardName;",
+									"}",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "cf20f93f-cfd9-4562-bf58-d1d0cf31cb6d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"const response = pm.response.json();",
+									"pm.environment.set(\"boardId\", response.id);",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "defaultLists",
+								"value": "false",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{boardName}}\",\n    \"desc\": \"Your Description\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/boards?defaultLists=false",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards"
+							],
+							"query": [
+								{
+									"key": "defaultLists",
+									"value": "false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/boards/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/boards/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"boards",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{boardId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "cards",
+			"item": [
+				{
+					"name": "/cards/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/actions",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/actions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/attachments",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/attachments",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"attachments"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/board",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/board",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"board"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/checklists",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/checklists",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"checklists"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/list",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/list",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"list"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/members",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/members",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"members"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"put in this JSON only the fields you want to update\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cards/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/desc",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "value",
+									"value": "{{VALUE}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}/cards/:id/desc",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"desc"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"desc\": \"your description\",\n    \"descData\": {\n        \"emoji\": {}\n    },\n    \"idBoard\": \"{{BOARD_ID}}\",\n    \"idList\": \"{{LIST_ID}}\",\n    \"name\": \"card name\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cards",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"put in this JSON only the fields you want to update\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/cards/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "lists",
+			"item": [
+				{
+					"name": "/lists/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/lists/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "{{listId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cards/:id/stickers",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cards/:id/stickers",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cards",
+								":id",
+								"stickers"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists/:id/actions",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/lists/:id/actions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists",
+								":id",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists/:id/board",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/lists/:id/board",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists",
+								":id",
+								"board"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists/:id/cards",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/lists/:id/cards",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists",
+								":id",
+								"cards"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists/:id",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"put in this JSON only the fields you want to update\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/lists/:id",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/lists",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b4aae220-9af8-4a5e-9dbd-454d0b5e1952",
+								"exec": [
+									"const response = pm.response.json();",
+									"pm.environment.set(\"listId\", response.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"List DONE\",\n    \"idBoard\": \"{{boardId}}\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/lists?idBoard={{boardId}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"lists"
+							],
+							"query": [
+								{
+									"key": "idBoard",
+									"value": "{{boardId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "members",
+			"item": [
+				{
+					"name": "/members/me",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/me",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:userIdOrName",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:userIdOrName",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":userIdOrName"
+							],
+							"variable": [
+								{
+									"key": "userIdOrName",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:id/actions",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:id/actions",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":id",
+								"actions"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:id/boards",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:id/boards",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":id",
+								"boards"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:id/cards",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:id/cards",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":id",
+								"cards"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:id/notifications",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:id/notifications",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":id",
+								"notifications"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:id/organizations",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:id/organizations",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":id",
+								"organizations"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/members/:id/tokens",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/members/:id/tokens",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"members",
+								":id",
+								"tokens"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "tokens",
+			"item": [
+				{
+					"name": "/tokens/:token",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/tokens/:token",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tokens",
+								":token"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/tokens/:token/webhooks",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/tokens/:token/webhooks",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"tokens",
+								":token",
+								"webhooks"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": ""
+								}
+							]
+						},
+						"description": "Get all webhooks for token"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "webhooks",
+			"item": [
+				{
+					"name": "/webhooks/:webhookId",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/webhooks/:webhookId",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"webhooks",
+								":webhookId"
+							],
+							"variable": [
+								{
+									"key": "webhookId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/webhooks",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"callbackURL\": \"{{URL}}\",\n    \"idModel\": \"{{MODEL_ID}}\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/webhooks",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"webhooks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/webhooks/:webhookId",
+					"request": {
+						"auth": {
+							"type": "oauth1",
+							"oauth1": [
+								{
+									"key": "consumerKey",
+									"value": "{{consumer_key}}",
+									"type": "string"
+								},
+								{
+									"key": "consumerSecret",
+									"value": "{{consumer_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								},
+								{
+									"key": "tokenSecret",
+									"value": "{{token_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "signatureMethod",
+									"value": "HMAC-SHA1",
+									"type": "string"
+								},
+								{
+									"key": "timestamp",
+									"value": 1499860097,
+									"type": "number"
+								},
+								{
+									"key": "nonce",
+									"value": "OOVu6c",
+									"type": "string"
+								},
+								{
+									"key": "version",
+									"value": "1.0A",
+									"type": "string"
+								},
+								{
+									"key": "realm",
+									"value": "",
+									"type": "string"
+								},
+								{
+									"key": "addParamsToHeader",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "addEmptyParamsToSign",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/webhooks/:webhookId",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"webhooks",
+								":webhookId"
+							],
+							"variable": [
+								{
+									"key": "webhookId",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "5789273d-449f-4fb8-ae81-d05607d8d8de",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "208f81d3-fa13-4b88-84c0-c7b743fdaa39",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
